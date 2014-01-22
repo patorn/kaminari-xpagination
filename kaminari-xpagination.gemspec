@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Kaminari::Xpagination::VERSION
   spec.authors       = ["Patorn Utenpattanun"]
   spec.email         = ["patorn.u@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = "X Pagination Headers for Kaminari"
+  spec.summary       = "X Pagination Headers for Kaminari"
   spec.homepage      = ""
   spec.license       = "MIT"
 
