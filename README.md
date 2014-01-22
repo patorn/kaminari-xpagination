@@ -1,6 +1,15 @@
 # Kaminari::Xpagination
 
-TODO: Write a gem description
+It provides x-pagination headers for paginated resources which come from a response.
+
+Header examples,
+
+  * Total
+  * Total Pages
+  * First
+  * Last
+  * Next
+  * Previous
 
 ## Installation
 
@@ -18,7 +27,14 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    # Paginate for @orders
+    after_filter only: [:index] { set_x_pagination_headers :orders }
+
+    def index
+      @orders = Order.page(params[:page]).per(params[:per_page] || 10)
+
+      render 'index.json'
+    end
 
 ## Contributing
 
